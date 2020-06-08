@@ -6,8 +6,10 @@ public class BankAccountApp {
        
 
        List<Account> accounts = new LinkedList<Account>(); 
+       
+       String file = "original.csv";
 
-        List<String[]> newAccountHolders = utilities.CSV.read(file);
+        List<String[]> newAccountHolders = CSV.read(file);
 
         for(String[] accountHolder : newAccountHolders){
             // System.out.println("NEW ACCOUNT");
